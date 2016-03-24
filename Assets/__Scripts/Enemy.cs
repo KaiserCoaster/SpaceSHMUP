@@ -48,6 +48,7 @@ public class Enemy : MonoBehaviour {
 	}
 
 	public virtual void Move () {
+		print ("in parent move");
 		Vector3 tempPos = pos;
 		tempPos.y -= speed * Time.deltaTime;
 		pos = tempPos;
